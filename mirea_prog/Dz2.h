@@ -1,11 +1,11 @@
 #pragma once
-#include "includes.h"
-class Dz1
+#include"includes.h"
+class Dz2
 {
 private:
 
 public:
-	Dz1(int numb) {
+	Dz2(int numb) {
 		switch (numb)
 		{
 		case(1):z1(); break;
@@ -17,7 +17,7 @@ public:
 		default:std::cout << "не найдено";
 			break;
 		}
-	
+
 	}
 
 	void z1();
@@ -26,5 +26,5 @@ public:
 	void z4();
 	void z5();
 
-};
 
+};

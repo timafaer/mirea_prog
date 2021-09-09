@@ -28,11 +28,13 @@ int main() {
         system("CLS");
         switch (number) {
 
-            case(1):Dz1 Dz(secnumber); break;
+        case 1: {Dz1 Dz(secnumber); } break;
+
+        case 2: {Dz2 Dz2(secnumber);} break;
 
 
-
-
+        default:
+            std::cout << "не найдено"; break;
         }
 
 

@@ -1,16 +1,6 @@
 #include "dz1.h"
 
-bool Dz1::end()
-{
-    char YN;
-    std::cout << "закончить: Y/N" << std::endl;
-    std::cin >> YN;
-    system("CLS");
-    if (YN == 'N'||YN=='n')
-        return false;
-    else
-        return true;
-}
+
 
 void Dz1::z1()
 {
@@ -23,8 +13,10 @@ void Dz1::z2()
 {
     do {
         std::cout << "введите два числа" << std::endl;
+
         float x, y;
         std::cin >> x >> y;
+        system("CLS");
         std::cout << "сумма: " << x + y << std::endl;
         std::cout << "разность: " << abs(x - y) << std::endl;
         std::cout << "произведение: " << x * y << std::endl;
@@ -38,6 +30,7 @@ void Dz1::z3()
         std::cout << " введите коэффиценты b и c:" << std::endl;
         float b, c;
         std::cin >> b >> c;
+        system("CLS");
         if (b == 0 && c == 0) std::cout << "бесконечность" << std::endl;
         else if (c == 0) std::cout << "0";
         else if (b == 0) std::cout << "корней нет";
@@ -52,6 +45,7 @@ void Dz1::z4()
         std::cout << "введите коэффиценты a, b и c: " << std::endl;
         float a, b, c;
         std::cin >> a >> b >> c;
+        system("CLS");
         if (a == 0) {
             if (b == 0 && c == 0) std::cout << "бесконечность" << std::endl;
             else if (c == 0) std::cout << "0";
@@ -79,12 +73,15 @@ void Dz1::z5()
         bool sh = true, day = true, lamp = true;
         std::cout << "день? Y/N ";
         std::cin >> YN;
+        system("CLS");
         if (YN == 'N' || YN == 'n') day = false;
         std::cout << "\nштора задвинута? Y/N ";
         std::cin >> YN;
+        system("CLS");
         if (YN == 'N' || YN == 'n') sh = false;
         std::cout << "\nлампа горит? Y/N ";
         std::cin >> YN;
+        system("CLS");
         if (YN == 'N' || YN == 'n') lamp = false;
 
         if (lamp || (day && !sh)) std::cout << "светло" << std::endl;
