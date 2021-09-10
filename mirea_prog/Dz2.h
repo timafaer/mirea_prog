@@ -2,17 +2,17 @@
 #include"includes.h"
 class Dz2
 {
-private:
+
 
 public:
 	Dz2(int numb) {
 		switch (numb)
 		{
-		case(1):z1(); break;
-		case(2):z2(); break;
-		case(3):z3(); break;
-		case(4):z4(); break;
-		case(5):z5(); break;
+		case 1:z1(); break;
+		case 2:z2(); break;
+		case 3:z3(); break;
+		case 4:z4(); break;
+		case 5:z5(); break;
 
 		default:std::cout << "не найдено";
 			break;

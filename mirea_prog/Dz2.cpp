@@ -11,9 +11,9 @@ void Dz2::z1()
 			eror(); 
 		}
 		else {
-			float L = sqrt(pow(R / 2 - r / 2, 2) + pow(h, 2));
-			std::cout << "Îבתול: " << PI * h * (pow(R, 2) + pow(r, 2) + L * (R + r)) / 3 << std::endl;
-			std::cout << "Ïכמשאהü: " << PI * (pow(R, 2) + pow(r, 2) + L * (R + r));
+			float L = sqrt(pow(R - r , 2) + pow(h, 2));
+			std::cout << "Îבתול: " << (1/3)*PI * h * (pow(R, 2) + pow(r, 2) +R * r)  << std::endl;
+			std::cout << "Ïכמשאהü: " << PI * (pow(R, 2) + pow(r, 2) + L * (R + r)) << std::endl;
 		}
 	} while (!end());
 }
@@ -60,10 +60,11 @@ void Dz2::z4()
 {
 	do {
 		std::cout << "גגוהטעו קטסכמ: " << std::endl;
-		int  n;
+		float n;
 		std::cin >> n;
 		system("CLS");
-		if (n <= 0)
+		
+		if (n <= 0||int(n)!=n)
 			eror();
 		else
 			for (int i = 1;i <= 10; i++) 

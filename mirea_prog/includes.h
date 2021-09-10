@@ -5,8 +5,9 @@
 #include<cmath>
 #include"dz1.h"
 #include"Dz2.h"
+#include"Dz3.h"
 static const float PI = 3.14;
-static void eror() { std::cout << "syntaxic error" << std::endl << "введите правильны значения" << std::endl; }
+static void eror() { std::cout << "syntaxic error" << std::endl << "введите правильные значения" << std::endl; }
 static bool end()
 {
     char YN;

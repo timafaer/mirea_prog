@@ -32,6 +32,8 @@ int main() {
 
         case 2: {Dz2 Dz2(secnumber);} break;
 
+        case 3: {Dz3 Dz3(secnumber);} break;
+
 
         default:
             std::cout << "не найдено"; break;
